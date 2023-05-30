@@ -1,12 +1,16 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button, Switch } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{ color: "#fff", fontWeight: 500, fontSize: 30 }}>
-        Awesome Project 💙
-      </Text>
+      <Switch />
+      <Text style={styles.title}>Awesome Project 💙</Text>
+      <Button
+        title="Learn More"
+        color="#65a7dd"
+        accessibilityLabel="Learn more about this purple button"
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -15,9 +19,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "lightblue",
+    padding: 24,
+    backgroundColor: "#99ccff",
+  },
+  title: {
+    marginTop: 16,
+    paddingVertical: 8,
+    borderWidth: 4,
+    borderColor: "#fff",
+    borderRadius: 6,
+    backgroundColor: "#61dafb",
     color: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold",
+    marginBottom: 10,
   },
 });
