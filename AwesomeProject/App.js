@@ -1,5 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button, Switch } from "react-native";
+import { Text, View, Button, Switch } from "react-native";
+
+import { styles } from "./style";
 
 export default function App() {
   return (
@@ -15,24 +17,3 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: "#99ccff",
-  },
-  title: {
-    marginTop: 16,
-    paddingVertical: 8,
-    borderWidth: 4,
-    borderColor: "#fff",
-    borderRadius: 6,
-    backgroundColor: "#61dafb",
-    color: "#fff",
-    textAlign: "center",
-    fontSize: 30,
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-});
