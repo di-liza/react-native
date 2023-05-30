@@ -1,10 +1,16 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 24,
-    backgroundColor: "#99ccff",
+    ...Platform.select({
+      ios: {
+        backgroundColor: "#000000",
+      },
+      android: {
+        backgroundColor: "#99ccff",
+      },
+    }),
   },
   title: {
     marginTop: 16,
