@@ -1,12 +1,20 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View, Button, Switch, Image } from "react-native";
+import { View } from "react-native";
+import { useFonts } from "expo-font";
 import { styles } from "./style";
-import { RegistrationScreen } from "./Screens";
+import { RegistrationScreen, LoginScreen } from "./Screens";
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+  });
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { fontFamily: "Roboto-Regular" }]}>
       <RegistrationScreen />
+      {/* <LoginScreen /> */}
       <StatusBar style="auto" />
     </View>
   );

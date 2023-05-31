@@ -3,25 +3,19 @@ import { StyleSheet } from "react-native";
 export const stylesReg = StyleSheet.create({
   container: {
     flex: 1,
-    boxSizing: "border - box",
+    boxSizing: "border-box",
     fontFamily: "Roboto",
-    width: "100%",
   },
   image: {
     flex: 1,
     justifyContent: "center",
-    padding: 0,
-    margin: 0,
   },
   scrollView: {
     position: "relative",
     zIndex: 1,
-    bottom: -55,
-
-    width: 375,
-
+    width: "100%",
     marginTop: 263,
-    marginHorizontal: 20,
+
     paddingTop: 92,
     paddingLeft: 16,
     paddingRight: 16,
@@ -39,14 +33,14 @@ export const stylesReg = StyleSheet.create({
     backgroundColor: "#F6F6F6",
     position: "absolute",
     borderRadius: 16,
-    top: "-15%",
-    left: "35%",
+    top: -60,
+    left: "38%",
     zIndex: 2,
   },
   addIcon: {
     position: "absolute",
-    top: 21,
-    right: 122,
+    top: 81,
+    left: 107,
     zIndex: 3,
   },
   text: {
@@ -58,13 +52,15 @@ export const stylesReg = StyleSheet.create({
     lineHeight: 35,
   },
   button: {
+    alignSelf: "center",
     width: 343,
+
     paddingTop: 16,
     paddingBottom: 16,
     marginTop: 32,
+    marginBottom: 16,
 
     borderRadius: 100,
-    marginBottom: 16,
     backgroundColor: "#FF6C00",
     borderRadius: 100,
 
