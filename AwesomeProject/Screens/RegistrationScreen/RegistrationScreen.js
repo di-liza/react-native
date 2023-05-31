@@ -10,6 +10,7 @@ import {
   TextInput,
   ScrollView,
   KeyboardAvoidingView,
+  Button,
 } from "react-native";
 import { stylesReg } from "./RegistrationScreen.styled";
 
