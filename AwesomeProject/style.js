@@ -8,21 +8,8 @@ export const styles = StyleSheet.create({
         backgroundColor: "#000000",
       },
       android: {
-        backgroundColor: "#99ccff",
+        backgroundColor: "##fff",
       },
     }),
-  },
-  title: {
-    marginTop: 16,
-    paddingVertical: 8,
-    borderWidth: 4,
-    borderColor: "#fff",
-    borderRadius: 6,
-    backgroundColor: "#61dafb",
-    color: "#fff",
-    textAlign: "center",
-    fontSize: 30,
-    fontWeight: "bold",
-    marginBottom: 10,
   },
 });
