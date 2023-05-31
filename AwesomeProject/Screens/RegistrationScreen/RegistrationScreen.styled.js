@@ -5,23 +5,49 @@ export const stylesReg = StyleSheet.create({
     flex: 1,
     boxSizing: "border - box",
     fontFamily: "Roboto",
+    width: "100%",
   },
   image: {
     flex: 1,
     justifyContent: "center",
+    padding: 0,
+    margin: 0,
   },
   scrollView: {
-    backgroundColor: "#FFFFFF",
-    marginHorizontal: 20,
-    height: 549,
+    position: "relative",
+    zIndex: 1,
+    bottom: -55,
+
     width: 375,
-    borderTopLeftRadius: 25,
-    borderTopRightRadius: 25,
+
     marginTop: 263,
+    marginHorizontal: 20,
     paddingTop: 92,
     paddingLeft: 16,
     paddingRight: 16,
+    paddingBottom: 78,
+
+    backgroundColor: "#FFFFFF",
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+
     textAlign: "center",
+  },
+  imagePlaceholder: {
+    height: 120,
+    width: 120,
+    backgroundColor: "#F6F6F6",
+    position: "absolute",
+    borderRadius: 16,
+    top: "-15%",
+    left: "35%",
+    zIndex: 2,
+  },
+  addIcon: {
+    position: "absolute",
+    top: 21,
+    right: 122,
+    zIndex: 3,
   },
   text: {
     color: "#212121",
@@ -49,7 +75,7 @@ export const stylesReg = StyleSheet.create({
   },
   input: {
     height: 50,
-    width: 343,
+    width: "100%",
 
     paddingTop: 16,
     paddingBottom: 15,
@@ -57,20 +83,29 @@ export const stylesReg = StyleSheet.create({
     marginBottom: 16,
 
     backgroundColor: "#F6F6F6",
-
+    color: "#212121",
     borderColor: "#E8E8E8",
     borderWidth: 1,
     borderStyle: "solid",
     borderRadius: 8,
 
-    color: "#BDBDBD",
     fontSize: 16,
     lineHeight: 19,
+    // position: "relative",
   },
   link: {
     color: "#1B4371",
     fontSize: 16,
     lineHeight: 19,
-    textAlign: "center,",
+    textAlign: "center",
+  },
+  showPassLink: {
+    color: "#1B4371",
+    fontSize: 16,
+    lineHeight: 19,
+    textAlign: "center",
+    position: "absolute",
+    top: 308,
+    right: 32,
   },
 });
